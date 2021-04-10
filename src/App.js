@@ -37,6 +37,12 @@ function App() {
       day: "Saturaday, April 10th, 2021",
       reminder: true,
     },
+    {
+      id: 6,
+      text: "search for a new phone",
+      day: "Saturaday, April 10th, 2021",
+      reminder: false,
+    },
   ]);
 
   const deleteTask = (id) => {
