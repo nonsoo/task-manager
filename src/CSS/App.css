@@ -90,3 +90,29 @@
 .taskReminder {
   border-left: 5px solid green;
 }
+
+.addForm {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+}
+
+.form__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1.25rem;
+}
+
+.form__item--text {
+  width: 50%;
+  height: 40%;
+  padding: 1.25rem;
+}
+
+.subBtn {
+  width: 30%;
+  align-self: center;
+  margin-top: 2rem;
+}
