@@ -7,7 +7,11 @@ import Tasks from "./Components/Tasks";
 import AddTask from "./Components/AddTask";
 
 function App() {
+  //this is going to hold the state to either show or hide the add
+  //task section
   const [showAddTask, setShowAddTask] = useState(false);
+
+  //this holds the state of each task
   const [tasks, setTasks] = useState([
     {
       id: 1,
@@ -59,14 +63,15 @@ function App() {
     setTasks([...tasks, newTask]);
   };
 
-  //This func deletes a task
-  //bascially it sets the new tasks to the filtered lst that is created
   const deleteTask = (id) => {
+    //This func deletes a task
+    //bascially it sets the new tasks to the filtered lst that is created
     setTasks(tasks.filter((task) => task.id !== id)); // setting the new tasks to the filtered lst
   };
 
-  //this func toggles the reminder feature, allows for the reminder to be changed from true to false
   const ToggleRemind = (id) => {
+    //this func toggles the reminder feature, allows for the reminder to be changed from true to false
+    //basically returning a new lst where by the reminder is changed for that specific ID
     setTasks(
       tasks.map((taskChild) =>
         taskChild.id === id
